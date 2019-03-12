@@ -1,0 +1,6 @@
+[submodule "ros_controllers"]
+	path = ros_controllers
+	url = git@github.com:UTNuclearRobotics/ros_controllers.git
+[submodule "ur_modern_driver"]
+	path = ur_modern_driver
+	url = https://github.com/ros-industrial/ur_modern_driver.git
