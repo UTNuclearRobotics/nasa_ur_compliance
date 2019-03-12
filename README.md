@@ -15,4 +15,14 @@ roslaunch nasa_ur_compliance ur5_ros_control.launch robot_ip:=192.168.1.102
 
 roslaunch ur5_moveit_config ur5_moveit_planning_execution.launch
 
-TODO: add jogging command here
+#### To toggle compliance ON/OFF:
+
+rosservice call /compliance_controller/toggle_compliance "{}"
+
+#### Other useful services:
+
+rosservice call /wrench_to_joint_vel_pub/disable_compliance_dimensions
+
+rosservice call /wrench_to_joint_vel_pub/adjust_stiffness
+
+rosservice call /wrench_to_joint_vel_pub/adjust_damping
