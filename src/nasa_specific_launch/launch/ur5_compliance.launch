@@ -1,5 +1,5 @@
 <launch>
   <node name="wrench_to_joint_vel_pub" pkg="wrench_to_joint_vel_pub" type="wrench_to_joint_vel_pub" output="screen" >
-    <rosparam command="load" file="$(find andyz_mods)/config/ur5_compliance.yaml" />
+    <rosparam command="load" file="$(find nasa_specific_launch)/config/ur5_compliance.yaml" />
   </node> 
 </launch>

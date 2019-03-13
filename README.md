@@ -11,9 +11,15 @@ git clone --recursive https://github.com/UTNuclearRobotics/nasa_ur_compliance
 
 ### Usage:
 
-roslaunch nasa_ur_compliance ur5_ros_control.launch robot_ip:=192.168.1.102
+source nasa_ur_compliance/devel/setup.bash
 
-roslaunch ur5_moveit_config ur5_moveit_planning_execution.launch
+roslaunch nasa_specific_launch ur5_ros_control.launch robot_ip:=192.168.1.2
+
+roslaunch nasa_specific_launch ur5_moveit_planning_execution.launch
+
+roslaunch nasa_specific_launch ur5_compliance.launch
+
+rviz
 
 #### To toggle compliance ON/OFF:
 

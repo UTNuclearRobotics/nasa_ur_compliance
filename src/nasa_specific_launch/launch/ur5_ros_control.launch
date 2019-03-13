@@ -38,7 +38,7 @@
   </node>
 
   <!-- Load controller settings -->
-  <rosparam file="$(find andyz_mods)/config/ur5_modern_driver_controllers.yaml" command="load"/>
+  <rosparam file="$(find nasa_specific_launch)/config/ur5_modern_driver_controllers.yaml" command="load"/>
 
   <!-- spawn controller manager -->
   <node name="ros_control_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"

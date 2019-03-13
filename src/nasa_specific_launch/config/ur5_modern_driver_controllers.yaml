@@ -121,12 +121,12 @@ compliance_controller:
    action_monitor_rate: 10
    gains:
       #!!These values are useable, but maybe not optimal
-      shoulder_pan_joint: {p: 1.2,  i: 0.01, d: 0.1, i_clamp: 1}
-      shoulder_lift_joint: {p: 1.2,  i: 0.01, d: 0.1, i_clamp: 1}
-      elbow_joint: {p: 1.2,  i: 0.01, d: 0.1, i_clamp: 1}
-      wrist_1_joint: {p: 1.2,  i: 0.01, d: 0.1, i_clamp: 1}
-      wrist_2_joint: {p: 1.2,  i: 0.01, d: 0.1, i_clamp: 1}
-      wrist_3_joint: {p: 1.2,  i: 0.01, d: 0.1, i_clamp: 1}
+      shoulder_pan_joint: {p: 0.6,  i: 0.01, d: 0.05, i_clamp: 1}
+      shoulder_lift_joint: {p: 0.6,  i: 0.01, d: 0.05, i_clamp: 1}
+      elbow_joint: {p: 0.6,  i: 0.01, d: 0.05, i_clamp: 1}
+      wrist_1_joint: {p: 0.6,  i: 0.01, d: 0.05, i_clamp: 1}
+      wrist_2_joint: {p: 0.6,  i: 0.01, d: 0.05, i_clamp: 1}
+      wrist_3_joint: {p: 0.6,  i: 0.01, d: 0.05, i_clamp: 1}
 
    # Use a feedforward term to reduce the size of PID gains
    velocity_ff:
